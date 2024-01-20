@@ -1,0 +1,37 @@
+.Header {
+  border: 5px grey;
+  margin: 0;
+  background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none; /* Remove bullet points for unordered list */
+  padding: 0; /* Optional: Remove default padding */
+}
+
+.Header_list {
+  display: flex;
+  gap: 10px;
+}
+
+/* 
+ปิด underline ปิด Text เปลี่ยนสี ของ Link ของheader
+ */
+a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Use the default text color */
+  cursor: text; /* Set cursor to text style */
+}
+
+a:hover,
+a:active,
+a:focus {
+  /* Override default browser styles for hovering, active, and focus states */
+  text-decoration: none !important;
+  color: inherit;
+  outline: none; /* Optional: Remove focus outline */
+}
